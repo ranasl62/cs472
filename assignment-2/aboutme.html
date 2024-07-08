@@ -4,57 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #444;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #e2e2e2;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 4px;
-        }
-        .images img {
-            width: 200px;
-            height: auto;
-            margin: 10px;
-        }
-        .images {
-            display: flex;
-            justify-content: space-between;
-        }
-        .button-container {
-            margin-top: 20px;
-        }
-        .button-container a {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .profile-photo {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styleme.css">
 </head>
 <body>
 
@@ -62,9 +12,9 @@
 
 <h1>About Me</h1>
 
-<p>My name is Md Rana Hossain.</p>
+<p>My name is <b> <a href="/cs472">Md Rana Hossain.</a></b></p>
 
-<p>I am a passionate software developer with a knack for creating efficient and scalable applications. I enjoy solving complex problems and continuously learning about new technologies. **Software development** is not just my profession but my passion.</p>
+<p>I am a passionate software developer with a knack for creating efficient and scalable applications. I enjoy solving complex problems and continuously learning about new technologies. <strong>Software development</strong> is not just my profession but my passion.</p>
 
 <h2>Classes I am taking at MUM</h2>
 <ul>
@@ -78,7 +28,19 @@
 
 <h2>My Favorite Movies, Books, or TV Shows</h2>
 <ol>
-    <li><a href="https://www.imdb.com/title/tt0468569/" target="_blank">The Dark Knight</a></li>
+    <li>
+        <a href="https://www.imdb.com/title/tt0468569/" target="_blank">The Dark Knight</a>
+        <dl>
+            <dt>Director:</dt>
+            <dd>Christopher Nolan</dd>
+            <dt>Genre:</dt>
+            <dd>Action, Crime, Drama</dd>
+            <dt>Tagline:</dt>
+            <dd>Why So Serious?</dd>
+            <dt>Plot Outline:</dt>
+            <dd>When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.</dd>
+        </dl>
+    </li>
     <li><a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby" target="_blank">The Great Gatsby</a></li>
     <li><a href="https://www.imdb.com/title/tt0944947/" target="_blank">Game of Thrones</a></li>
 </ol>
@@ -87,20 +49,21 @@
 <div class="images">
     <div>
         <h3>Happy</h3>
-        <img src="./../common/image/happy.png?text=Happy" alt="Happy Image">
+        <img src="./../common/image/happy.png" alt="Happy Image">
     </div>
     <div>
         <h3>Sad</h3>
-        <img src="./../common/image/happy.png" alt="Sad Image">
+        <img src="./../common/image/sad.png" alt="Sad Image">
     </div>
 </div>
 
 <h2>About My Neighbor</h2>
-<p>My neighbor, Tushar Ghosh, is a software engineer. A funny thing about Tushar is that he can name all the characters from "Game of Thrones" but still struggles to remember our Wi-Fi password!</p>
+<p class="neighbor">My neighbor, <b>Tushar Ghosh</b>, is a software engineer. A funny thing about Tushar is that he can name all the characters from "Game of Thrones" but still struggles to remember our Wi-Fi password!</p>
 
-<div class="button-container">
-    <a href="/cs472">Back to Home Page</a>
-</div>
+<footer>
+    <p>Email: <a href="mailto:mdrana.hossain@miu.com">mdrana.hossain@miu.com</a></p>
+    <p>Student ID: 616047</p>
+</footer>
 
 </body>
 </html>
