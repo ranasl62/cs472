@@ -35,8 +35,3 @@ function createCircle(width, growthAmount, growRate) {
         circle.remove();
     });
 }
-
-// Home button functionality
-document.getElementById('homeButton').addEventListener('click', () => {
-    alert('Going Home!'); // You can replace this with actual navigation if needed
-});
